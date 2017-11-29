@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+.button{
+	height: 50px;
+	width: 50px;
+	margin-left: 500px;
+	border-radius: 15px;
+}
+.button:hover{
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+	transition: .3s;
+}
+body{
+	background-color:#BB1500;
+}
+.form{
+	margin-left: 200px;
+	margin-top: 200px;
+	animation-name: startrightanimate;
+	animation-duration: 5s;
+
+}
+.form h1{
+	color: white;
+	font-size: 50px;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	float: left;
+}
+.form ul{
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+.url{
+	font-size: 40px;
+	background-color: #BB1500;
+	color: white;
+	margin-top: 46px;
+	margin-left: 30px;
+	border-radius: 20px;
+	width: 700px;
+	}
+.url:hover{
+		background-color: white;
+		color:#BB1500;
+}
+ .header h1 {
+ 	animation-name: startleftanimate;
+ 	animation-duration: 5s;
+ 	padding-right: 0px;
+	color: white;
+	font-size: 70px;
+	margin-left: 000px;
+	padding-left: 40px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.header h1:hover{
+	background-color: white;
+	color: red;
+	transition: .3s;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-top: 30px;
+}
+.bottom h1 a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.bottom h1{
+	margin-left: 800px;
+	margin-top: 100px;
+
+}
+.error{
+	color: pink;
+	font-size: 40px;
+	margin-left: 00px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+@keyframes startrightanimate{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0%;);
+	}
+}
+@keyframes startleftanimate{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform: translateX(0%;);
+	}
+}
