@@ -1,15 +1,20 @@
 <?php
+error_reporting(0);
 $error=0;
 if(isset($_POST['url'])){
+
 $url=$_POST['url'];
-$redirect="https://www.ss"."$url";
+
+$spliturl=(explode(".",$url));
+
+$redirect="https://www.ssyoutube.".$spliturl[2];
 header("location:$redirect");
 
 $error=0;
 }
 else{
 	$error=1;
-	$message="Enter url properly (Dont forget to remove https:www. form your url)";
+	
 }
 
 
@@ -29,13 +34,13 @@ else{
 	<form action="index.php" method="post">
 		<label class="error"> <?php if($error==1) echo "$message"; ?></label>
 		<ul>
-		<li><h1>https://www.</h1></li>	
+		
 		<li><input type="text" name="url" class="url" placeholder="eg - youtube.com/watch?v=-wtITCHWuI"></li>
 		</ul>
 		<br>
 
 		<br>
-		<input type="image" name="submit" value="" class="button" src="button.png">
+		<input type="image" name="submit" value="" class="button" src="button.png" target="_blank">
 	</form>
 	</div>
 	<div class="bottom"> 
